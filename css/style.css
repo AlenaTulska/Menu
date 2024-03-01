@@ -1,0 +1,226 @@
+@import url(reset.css);
+
+ @font-face {
+    font-family:'PlayfairDisplay-Regular';
+    src:url(../fonts/PlayfairDisplay-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family:'PlayfairDisplay-Medium';
+    src:url(../fonts/PlayfairDisplay-Medium.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family:'PlayfairDisplay-Italic';
+    src:url(../fonts/PlayfairDisplay-Italic.woff2) format('woff2');
+    font-weight: 400;
+    font-style: italic;
+ }
+
+ @font-face {
+    font-family:'Lora-Regular';
+    src:url(../fonts/Lora-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family:'Lora-Medium';
+    src:url(../fonts/Lora-Medium.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family:'Lora-Italic';
+    src:url(../fonts/Lora-Italic.woff2) format('woff2');
+    font-weight: 400;
+    font-style: italic;
+ }
+
+
+ @font-face {
+    font-family:'EBGaramond-Regular';
+    src:url(../fonts/EBGaramond-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+ }
+
+ 
+ @font-face {
+    font-family:'EBGaramond-Medium';
+    src:url(../fonts/EBGaramond-Medium.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+ }
+ 
+ @font-face {
+    font-family:'EBGaramond-Italic';
+    src:url(../fonts/EBGaramond-Italic.woff2) format('woff2');
+    font-weight: 400;
+    font-style: italic;
+ }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.header-menu {
+    padding: 20px 0;
+    background-color: rgb(90, 64, 114);
+    margin-bottom: 30px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;    
+}
+
+.menu-list a {
+    background-color: rgb(241, 203, 216);
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    font-family:'PlayfairDisplay-Medium';
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-list li {
+    position: relative;
+}
+
+.menu-list li:hover .menu-second-list {
+    display: block;
+}
+
+.menu-second-list {
+    position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	padding-top: 20px;
+    text-align: center;    
+}
+
+.menu-second-list a {
+    background-color: blanchedalmond;
+    font-family:'EBGaramond-Italic';
+}
+    
+
+.menu-second-list li a {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+    flex-flow: 0 0 100%;
+}
+
+.third-list {
+    position: absolute;
+    top:0;
+    right:100%;
+    display:none  
+}
+
+.third-list a {
+font-family:'Lora-Medium';
+}
+
+.menu-second-list li:hover .third-list{
+    display: block;
+} 
+
+/* INLINE */
+
+.outline {
+outline: 1px solid black;
+}
+
+.blue {
+    background-color: blue;    
+}
+
+.bordo {
+    background-color: #3a0606;
+}
+.purple {
+background-color: blueviolet;
+}
+
+.w800 {
+width: 800px;
+}
+
+.w400 {
+width: 400px;
+}
+
+.w200 {
+width: 200px;
+}
+
+.h400 {
+height: 400px;
+}
+
+.h200 {
+height: 200px;
+}
+
+.h133{
+height: 133.3px;
+}
+
+.h100{
+    height: 100px;
+}
+.inline {
+display: inline-block;
+}
+
+.float {
+float: left;
+}
+
+.clearfix::after{
+content:'';
+clear: both;
+display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.box {
+    width: 1500px;
+    color: antiquewhite;
+    margin: 0 auto;
+}
+
+ tr td{
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 2px solid black;
+}
+
+td {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(107, 0, 128);
+}
+
+
