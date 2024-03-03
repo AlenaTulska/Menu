@@ -92,6 +92,45 @@
     font-family:'PlayfairDisplay-Medium';
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
+    padding-left: 35px;
+}
+
+
+.hm::before {
+content: '';
+background: url(../images/home-svgrepo-com.svg) no-repeat 50%/30px;
+position: absolute;
+width: 30px;
+height: 30px;
+top: 3px;
+left: 3px;
+}
+
+.glr::before {
+content: '';
+background: url(../images/gallery-svgrepo-com.svg) no-repeat 50%/30px;
+position: absolute;
+width: 30px;
+height: 30px;
+top: 3px;
+left: 2px;
+}
+
+
+.hwrk::after {
+content: '';
+background: url(../images/arrow-down-square-svgrepo-com.svg) no-repeat 50%/30px;
+position: absolute;
+width: 25px;
+height: 25px;
+top: 7px;
+right: 3px;
+}
+
+.menu-list a.hwrk {
+padding-left: 10px;
+padding-right: 40px;
 }
 
 .menu-list li {
@@ -115,9 +154,19 @@
     background-color: blanchedalmond;
     font-family:'EBGaramond-Italic';
 }
+
+.menu-second-list a.second::before {
+content: '';
+background: url(../images/arrow-left-svgrepo-com.svg) no-repeat 0/30px;
+width: 30px;
+height: 30px;
+position: absolute;
+top: 2px;
+left: 0;
+}
     
 
-.menu-second-list li a {
+.menu-second-list li a{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -223,4 +272,64 @@ td {
     background-color: rgb(107, 0, 128);
 }
 
+.footer {
+    width: 100%;
+    background-color: rgb(90, 64, 114);
+    margin-top: 30px;
+}
 
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    padding: 20px;
+}
+
+.footer-list a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    position: relative;
+}
+
+.footer-list a.fb::before {
+    content: '';
+    background: url(../images/facebook-svgrepo-com.svg) no-repeat 0/40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-list a.inst::before {
+    content: '';
+    background: url(../images/instagram-1-svgrepo-com.svg) no-repeat 0/40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-list a.li::before {
+    content: '';
+    background: url(../images/linkedin-1-svgrepo-com.svg) no-repeat 0/40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-list a.tg::before {
+    content: '';
+    background: url(../images/telegram-svgrepo-com.svg) no-repeat 0/40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
